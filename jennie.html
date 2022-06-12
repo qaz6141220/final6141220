@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+        <title>Jennie</title>
+        <link rel="stylesheet" href="social.css">
+        <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <img src="images/logo3.png" class="logo">
+                <ul>
+                    <li><img src="images/notification.png"></li>
+                    <li><img src="images/inbox.png"></li>
+                    <li><img src="images/video.png"></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="images/mark.jpg">
+                </div>
+            </div>
+            <!------------------------ settings-menu----------------------->
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+                <div class="setting-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Lisa</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="images/feedback.png">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="setting-links">
+                        <img src="images/setting.png" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/help.png" class="settings-icon">
+                        <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/logout.png" class="settings-icon">
+                        <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-------------- profile page --------------->
+        <div class="profile-container">
+            <img src="images/group.jpg" class="cover-img">
+            <div class="profile-details">
+                <div class="pd-left">
+                    <div class="pd-row">
+                        <img src="images/jennie3.jpg" class="pd-image">
+                        <div>
+                            <h3>Jennie</h3>
+                            <p>114894 Friends - 20 mutual</p>
+                            <img src="images/111.jpg">
+                            <img src="images/rose1.jpg">
+                            <img src="images/jisoo1.jpg">
+                            <img src="images/lisa1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="pd-right">
+                    <button type="button"><img src="images/add-friends.png">Friends</button>
+                    <button type="button"><img src="images/message.png">Messege</button>
+                    <br>
+                    <a href="#"><img src="images/more.png"></a>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="info-col"></div>
+                <div class="post-col">
+                    <div class="write-post-container">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Jennie</p>
+                                <small>Public <i class="fas fa-caret-down"></i></small>
+                            </div>
+                        </div>
+                        <!-- 2022/6/9 02:44 -->
+                        <div class="post-input-container">
+                            <textarea rows="3" placeholder="what's on your mind Jennie？"></textarea>
+                            <div class="add-post-links">
+                                <a href="#"><img src="images/live-video.png"> Live Vidoe</a>
+                                <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                                <a href="#"><img src="images/feeling.png"> Feling/Activity</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">      <!--  以下可以更改貼文的部分 -->
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/mark.jpg">
+                                <div>
+                                    <p>Jennie</p>
+                                    <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                    <span>June 24 2021</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">Jennie於1996年1月16日出生於韓國首爾特別市江南區清潭洞，獨生女，曾被誤以為在荷蘭出生。曾就讀於首爾清潭初等學校，後前往紐西蘭奧克蘭留學長達五年，就讀於懷科懷中級學校和ACG·帕內爾學院。在2006年曾拍攝MBC紀錄片《英語》，記錄韓國人在國外加強英語能力和文化交流的方法。國中之後回到韓國，轉學到首爾清潭中學校，畢業後升學至首爾清潭高等學校。<span></span>  <a href="#"></a>
+                            <!--<a href="#">#YoutubeChannel</a>--></p>
+                            <!-- <img src="images/feed-image-2.png" class="post-img"> -->
+                            <div class="post-row">
+                                <div class="activity-icons">
+                                    <div><img src="images/like.png"> 120</div>
+                                    <div><img src="images/comments.png"> 45</div>
+                                    <div><img src="images/share.png"> 20</div>
+                                </div>
+                                <div class="post-profile-icon">
+                                    <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/mark.jpg">
+                                <div>
+                                    <p>Jennie</p>
+                                    <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                    <span>January 2018</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">2018年1月，Jennie被選為 <span>《Chanel》</span> 韓國美妝的新模特，以Harper's BAZAAR Korea作為其新繆斯女神為該品牌拍攝了第一張照片。於同年6月成為CHANEL韓國區的大使。CHANEL韓國發言人解釋說，Jennie對品牌的忠誠以及她的時尚風格與CHANEL的形象吻合。2019年3月6日，她成為CHANEL法國時裝公司的全球形象大使。2021年3月，Jennie在《VOGUE Korea》三月號兼任了編輯、造型和模特兒，正式以時尚編輯的身份出道。2021年9月，Jennie與CHANEL展開了第一個合作的全球廣告，也是她第一個與CHANEL合作的成衣系列廣告。 <a href="https://www.voguehk.com/zh/article/celebrity/jennie-kim-blackpink-style-file-chanel/">#CHANEL</a>
+                            <!--<a href="#">#ToutubeChannel</a>--></p>
+                        <img src="images/jenniechanel.webp.crdownload" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like-blue.png"> 120</div>
+                                <div><img src="images/comments.png"> 45</div>
+                                <div><img src="images/share.png"> 20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/mark.jpg">
+                                <div>
+                                    <p>Jennie</p>
+                                    <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                    <span>November 12 2018</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">以BLACKPINK的身份活動兩年後，Jennie率先隻身展開音樂活動，其個人首張單曲 <span>《SOLO》</span> 發行於2018年11月12日。2021年1月13日，Jennie開設了個人的YouTube頻道。並於1月16日，也就是她本人的生日時上傳了此頻道的第一部影片。 <a href="https://www.marieclaire.com.tw/entertainment/music/39690">#SOLO</a>
+                            <!--<a href="#">#ToutubeChannel</a>--></p>
+                        <img src="images/jenniesolo.webp" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like-blue.png"> 120</div>
+                                <div><img src="images/comments.png"> 45</div>
+                                <div><img src="images/share.png"> 20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/mark.jpg">
+                                <div>
+                                    <p>Lisa</p>
+                                    <small>Public <i class="fas fa-caret-down"></i></small>
+                                    <span> 2018</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">自2018年開始， <span>《思琳（CELINE）》</span> 就有意與Lisa接觸，形象總監Hedi Slimance在上任後第一款設計的「The 16 Bag」也在未發行時給予Lisa，讓她成為全球首背的亞洲藝人，而在2019年，CELINE也讓Lisa登上韓國《DAZED》2月號封面，是他們第一個合作的雜誌封面，也因此展開了長期合作關係。 <a href="https://www.elle.com/tw/fashion/celeb-style/g34119324/blackpink-lisa-celine-ambassador/">#CELINE</a>
+                            <a href="#">#ToutubeChannel</a></p>
+                        <img src="images/lisaceline.webp" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like-blue.png"> 120</div>
+                                <div><img src="images/comments.png"> 45</div>
+                                <div><img src="images/share.png"> 20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2021 - Easy Tutorials Youtude Channel</p>
+        </div>
+        <script src="social.js"></script>
+    </body>
+</html>
+    

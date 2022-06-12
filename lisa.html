@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+        <title>Lisa</title>
+        <link rel="stylesheet" href="social.css">
+        <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <img src="images/logo3.png" class="logo">
+                <ul>
+                    <li><img src="images/notification.png"></li>
+                    <li><img src="images/inbox.png"></li>
+                    <li><img src="images/video.png"></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="images/mark.jpg">
+                </div>
+            </div>
+            <!------------------------ settings-menu----------------------->
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+                <div class="setting-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Lisa</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="images/feedback.png">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="setting-links">
+                        <img src="images/setting.png" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/help.png" class="settings-icon">
+                        <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/logout.png" class="settings-icon">
+                        <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-------------- profile page --------------->
+        <div class="profile-container">
+            <img src="images/group.jpg" class="cover-img">
+            <div class="profile-details">
+                <div class="pd-left">
+                    <div class="pd-row">
+                        <img src="images/lisa2.jpg" class="pd-image">
+                        <div>
+                            <h3>Lisa</h3>
+                            <p>50265 Friends - 20 mutual</p>
+                            <img src="images/111.jpg">
+                            <img src="images/rose1.jpg">
+                            <img src="images/jisoo1.jpg">
+                            <img src="images/lisa1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="pd-right">
+                    <button type="button"><img src="images/add-friends.png">Friends</button>
+                    <button type="button"><img src="images/message.png">Messege</button>
+                    <br>
+                    <a href="#"><img src="images/more.png"></a>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="info-col"></div>
+                <div class="post-col">
+                    <div class="write-post-container">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Lisa</p>
+                                <small>Public <i class="fas fa-caret-down"></i></small>
+                            </div>
+                        </div>
+                        <!-- 2022/6/9 02:44 -->
+                        <div class="post-input-container">
+                            <textarea rows="3" placeholder="what's on your mind Lisa？"></textarea>
+                            <div class="add-post-links">
+                                <a href="#"><img src="images/live-video.png"> Live Vidoe</a>
+                                <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                                <a href="#"><img src="images/feeling.png"> Feling/Activity</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">      <!--  以下可以更改貼文的部分 -->
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/mark.jpg">
+                                <div>
+                                    <p>Lisa</p>
+                                    <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                    <span>June 24 2021</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">Lisa於1997年3月27日出生於泰國武里南府，在曼谷長大，是獨生女。她的母親名為七提披（จิตทิพย์），繼父Marco P. Brüschweiler是泰籍瑞士人，是世界認可的頂級大廚，也在曼谷開設泰式廚藝學校。早年時Lisa曾在泰國與BamBam（JYP娛樂旗下男子音樂組合GOT7的成員）和Ten（SM娛樂旗下男子音樂組合NCT小分隊WayV的現任成員）隸屬於「We Zaa Cool」。<span></span>  <a href="#"></a>
+                            <!--<a href="#">#YoutubeChannel</a>--></p>
+                            <!-- <img src="images/feed-image-2.png" class="post-img"> -->
+                            <div class="post-row">
+                                <div class="activity-icons">
+                                    <div><img src="images/like.png"> 120</div>
+                                    <div><img src="images/comments.png"> 45</div>
+                                    <div><img src="images/share.png"> 20</div>
+                                </div>
+                                <div class="post-profile-icon">
+                                    <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/mark.jpg">
+                                <div>
+                                    <p>Lisa</p>
+                                    <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                    <span>October 15 2019</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">2019年10月15日，Lisa進軍中國演藝圈，並且開始發展她在舞蹈上的才華，於愛奇藝製作的綜藝節目 <span>《青春有你2》</span> 中擔任「舞蹈導師」一職，她是首位被公開的導師，並以此節目獲得了許多的讚揚。隔年2021年1月，Lisa再次成為導師，於《青春有你 (第三季)》中再次擔任「舞蹈導師」一職。 <a href="#">#EasyTutorias</a>
+                            <!--<a href="#">#ToutubeChannel</a>--></p>
+                        <img src="images/lisahaveyou.jpg" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like-blue.png"> 120</div>
+                                <div><img src="images/comments.png"> 45</div>
+                                <div><img src="images/share.png"> 20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/mark.jpg">
+                                <div>
+                                    <p>Lisa</p>
+                                    <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                    <span>September 10 2021</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">2021年9月10日，Lisa發表首張個人單曲專輯 <span>《LALISA》</span> 主打曲為《LALISA》，收錄曲為《MONEY》，正式開始了她的個人音樂事業與生涯，單曲專輯《LALISA》在全球上架，主打曲《LALISA》於當日9月10日旋即橫掃60個國家的iTunes音樂下載排行榜冠軍，截止9月13日為止，共登上72個國家的iTunes音樂下載排行榜冠軍，刷新了韓國明星iTunes下載紀錄，收錄曲《MONEY》則登上了40個國家的iTunes音樂下載排行榜冠軍，在Spotify上，《LALISA》隨即拿下320萬次串流，收錄曲《MONEY》則是拿下230萬次串流。 <a href="https://hypebeast.com/zh/2021/9/blackpink-lisa-lalisa-solo-debut-stream-release-listen">#Lalisa</a>
+                            <!--<a href="#">#ToutubeChannel</a>--></p>
+                        <img src="images/lalisa.jpg" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like-blue.png"> 120</div>
+                                <div><img src="images/comments.png"> 45</div>
+                                <div><img src="images/share.png"> 20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/mark.jpg">
+                                <div>
+                                    <p>Lisa</p>
+                                    <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                    <span> 2018</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">自2018年開始， <span>《思琳（CELINE）》</span> 就有意與Lisa接觸，形象總監Hedi Slimance在上任後第一款設計的「The 16 Bag」也在未發行時給予Lisa，讓她成為全球首背的亞洲藝人，而在2019年，CELINE也讓Lisa登上韓國《DAZED》2月號封面，是他們第一個合作的雜誌封面，也因此展開了長期合作關係。 <a href="https://www.elle.com/tw/fashion/celeb-style/g34119324/blackpink-lisa-celine-ambassador/">#CELINE</a>
+                            <!--<a href="#">#ToutubeChannel</a>--></p>
+                        <img src="images/lisaceline.webp" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like-blue.png"> 120</div>
+                                <div><img src="images/comments.png"> 45</div>
+                                <div><img src="images/share.png"> 20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2021 - Easy Tutorials Youtude Channel</p>
+        </div>
+        <script src="social.js"></script>
+    </body>
+</html>
+    

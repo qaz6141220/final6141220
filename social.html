@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+        <title>SocialBook</title>
+        <link rel="stylesheet" href="social.css">
+        <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <!--------------------------------導覽頁------------------------------------->
+            <div class="nav-left">
+                <img src="images/logo3.png" class="logo">
+                <ul>
+                    <li><img src="images/notification.png"></li>
+                    <li><img src="images/inbox.png"></li>
+                    <li><img src="images/video.png"></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="images/mark.jpg">
+                </div>
+            </div>
+            <!------------------------ settings-menu----------------------->
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+                <div class="setting-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/mark.jpg">
+                        <div>
+                            <p>Blackpink</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="images/feedback.png">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="setting-links">
+                        <img src="images/setting.png" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/help.png" class="settings-icon">
+                        <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/logout.png" class="settings-icon">
+                        <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+        <!------------------------ left-sidebar----------------------->
+            <div class="left-sidebar">
+                <div class="imp-links">
+                    <a href="#"><img src="images/news.png"> Latest News</a>
+                    <a href="#"><img src="images/friends.png"> Friends</a>
+                    <a href="#"><img src="images/group.png"> Group</a>
+                    <a href="#"><img src="images/marketplace.png"> marketplace</a>
+                    <a href="#"><img src="images/watch.png"> Watch</a>
+                    <a href="#">See More</a>
+                </div>
+                <div class="shortcut-links">
+                    <p>Your Shortcuts</p>
+                    <a href="https://www.facebook.com/BLACKPINKOFFICIAL"><img src="images/group1.jpg"> Facebook</a>
+                    <a href="https://www.instagram.com/blackpinkofficial/"><img src="images/gruop2.jpg"> Instagram</a>
+                    <a href="https://twitter.com/blackpink"><img src="images/group6.jpg"> twitter</a>
+                    <a href="https://www.weverse.io/blackpink/feed"><img src="images/group7.jpg"> Weversea</a>
+                </div>
+            </div>
+        <!------------------------ main-content --------------------->
+            <div class="main-content">
+                <div class="story-gallery">
+                    <div class="story story1">
+                        <img src="images/upload.png">
+                        <p>Post Story</p>
+                    </div>
+                    <div class="story story2">
+                        <img src="images/111.jpg">
+                        <p>Jennie</p>
+                    </div>
+                    <div class="story story3">
+                        <img src="images/rose1.jpg">
+                        <p>Rosé</p>
+                    </div>
+                    <div class="story story4">
+                        <img src="images/lisa1.jpg">
+                        <p>Lisa</p>
+                    </div>
+                    <div class="story story5">
+                        <img src="images/jisoo1.jpg">
+                        <p>Jisoo</p>
+                    </div>
+                </div>
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/mark.jpg">
+                        <div>
+                            <p>Blackpink</p>
+                            <small>Public <i class="fas fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    <!-- 2022/6/9 02:44 -->
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="what's on your mind Blackpink？"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/live-video.png"> Live Vidoe</a>
+                            <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                            <a href="#"><img src="images/feeling.png"> Feling/Activity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">      <!--  以下可以更改貼文的部分 -->   <!--1-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>September 10 2021</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">8月23日，官方釋出個人出道預告海報。8月26日，官方宣佈將於9月10日以個人身份正式出道。9月10日，成員<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/lisa.html">Lisa</a>以首張個人單曲專輯<span>《LALISA》</span> 個人出道，成為團內第三位以個人身分出道的成員。 <a href="https://www.marieclaire.com.tw/entertainment/news/60234">#Lalisa</a>
+                        <!--<a href="#">#YoutubeChannel</a>--></p>
+                        <img src="C:\Users\魏成駿\OneDrive\桌面\social\images\2021_1.jpeg" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like.png"> 120</div>
+                                <div><img src="images/comments.png"> 45</div>
+                                <div><img src="images/share.png"> 20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                </div>
+                <div class="post-container">                                        <!--2-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>March 12 2021</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">除了成員Jisoo主演電視劇，BLACKPINK成員也開始往各領域發展，今年年初，YG經紀公司宣布<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/rose.html">rosé</a>及<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/lisa.html">Lisa</a>將成為即成員<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/jennie.html">Jennie</a>之後，第二位及第三位以個人名義出道的成員，將於2021年個人出道。在3月12日，成員Rosé以單曲專輯 <span>《R》</span> 正式solo出道，成為團內第二位以個人身分出道的成員。 <a href="https://www.harpersbazaar.com/tw/celebrity/celebritynews/g35869956/blackpink-rose-r-album-interview/">#R</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="C:\Users\魏成駿\OneDrive\桌面\social\images\2021-2.jpg" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--3-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>January 31 2021</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">年初，BLACKPINK於1月31日舉辦了首場線上演唱會，首次在世界上所有粉絲面前表演了新專輯 <span>《THE ALBUM》</span> 內收錄曲目舞台，一共19首歌曲的精彩表演也創下了全新紀錄，根據統計，當天約有28萬個YouTube 帳號申請成為付費會員，創下了YG旗下女團單一演唱會的最多觀眾數紀錄，並且這場演出的收入輕易地突破了一百億韓元。 <a href="https://www.koreastardaily.com/tc/news/133413">#THESHOWToday</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="images/2021.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--4-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>January 14 2021</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">2021年初，成員<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/jisoo.html">Jisoo</a>出演電視劇 <span>《雪降花》</span> ，並首次於電視劇內擔任女主角。 <a href="https://www.elle.com/tw/entertainment/drama/g38563740/snowdrop-disney-plus/">#雪降花</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="C:\Users\魏成駿\OneDrive\桌面\social\images\2021-3.jpg" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--5-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>October 2 2020</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">10月2日，BLACKPINK正式發行首張正規專輯 <span>《THE ALBUM》</span> ，收錄主打歌<span>《Lovesick Girls》</span>在內的8首歌曲，其中有與卡蒂·B合作的新歌《Bet You Wanna》、《How You Like That》以及《Ice Cream》。此專輯讓BLACKPINK成為KPOP歷史上第一個GAON榜單銷量破百萬女歌手，《THE ALBUM》以1,073,671的銷量站上了10月GAON專輯銷售榜單的第二名，也是女歌手中第一個GAON榜單銷量突破一百萬張的專輯，更是韓國女子團體第一次達到銷售破一百萬的紀錄。除了在銷售量的大突破，BLACKPINK在觀看次數上也擁有更多的突破，10月13日，BLACKPINK的MV〈Boombayah〉觀看次數突破破十億，成為她們第三支破十億的音樂錄影帶。 <a href="https://vocus.cc/article/60d44ad8fd897800010754cd">#THE ALBUM</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="images/2020-3.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--6-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>June 1 2020</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">經歷了長達一年多的空白期，在年初的合作曲過後，6月1日YG宣布BLACKPINK將於6月26日發布首張正規專輯先行曲 <span>《How You Like That》</span> 的音源及音樂錄影帶，是睽違一年兩個月的回歸。先行曲《How You Like That》同時獲得很好的成績，歌曲於6月26日發行當天同步上線BLACKPINK的YouTube頻道，一上線便打破YouTube多項紀錄，包括首播視頻觀看人數最多的視頻、發布後24小時內觀看人數最多的視頻（期間共計8630萬次）、點擊量破1億、2億和6億最快的視頻、點讚人數最多的視頻（1700多萬讚），被列入2020年金氏世界紀錄。 <a href="https://www.marieclaire.com.tw/entertainment/news/50781">#How You Like That</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="images/2020-2.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--7-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>April 22 2020</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">在年初，BLACKPINK第二次與其他藝人展開了音樂合作，4月22日，女神卡卡表示將與與BLACKPINK合作，發行其專輯 《Chromatica》的第三首先行曲 <span>《Sour Candy》</span> ，為BLACKPINK第二次再和西洋歌手合作。歌曲發佈後在告示牌百大單曲榜（Billboard Hot 100）排行榜排在第33位，為Gaga帶來了她的第25首40首熱門歌曲，也是BLACKPINK第一次在該榜單上擁有最高的成績，成為至今為止美國最暢銷的歌曲，也是K-pop女子組合中排名最高的歌曲。在澳大利亞，這首歌的排名是第8位，成為Blackpink在該國最受歡迎的歌曲。這也成為他們在英國的首支二十大單曲，位列第17名。 <a href="https://www.marieclaire.com.tw/entertainment/music/50194/lady-gaga-blackpink-sour-candy">#Sour Candy</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="C:\Users\魏成駿\OneDrive\桌面\social\images\2020-1.jpg" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--8-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>January 12 2019</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">年初，BLACKPINK開展了首次由她們領銜的巡演，以宣傳出道至今所發行過的音樂專輯。36場 <span>《In Your Area世界巡迴演唱會》</span> 在亞洲、北美、歐洲和澳洲舉辦。巡演在商業上也取得了不俗的票房成績。其中，BLACKPINK在美國芝加哥好事達體育館的售罄場次票房共進帳1,815,062美元，是目前和辣妹合唱團是歷史上唯二在美國單場演唱會上總收入超過100萬美元的女子組合，BLACKPINK也成為了在美洲近十年內第一組單場演唱會進帳超過100萬美元的女團，亦是亞洲第10位在美洲的單場演出中收入突破100萬美元的藝人。 <a href="https://www.elle.com/tw/entertainment/gossip/g26617316/blackpink-concert-in-taipei/">#In Your Aera</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="images/2019-1.jpg" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--9-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>October 25 2018</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">10月25日 ，YG娛樂表示<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/lisa.html">Lisa</a>將成為即成員<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/jennie.html">Jennie</a>將以個人身份出道。 11月12日，<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/lisa.html">Lisa</a>將成為即成員<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/jennie.html">Jennie</a>率先以個人身份活動，推出首張個人單曲 <span>《Solo》</span> 出道，成為BLACKPINK團體內首位以個人身分出道並展開個人活動的成員。 <a href="https://girlstyle.com/tw/article/63570/jennie%E5%96%AE%E6%9B%B2-solo-%E7%99%BC%E4%BD%88-24%E5%B0%8F%E6%99%82%E9%A3%86%E7%A0%B41%E5%8D%83%E8%90%AC%E7%80%8F%E8%A6%BD-jennie-blackpink%E5%85%B6%E4%BB%96%E6%88%90%E5%93%A1%E4%B9%9F%E5%9C%A8%E6%BA%96%E5%82%99%E5%87%BA%E8%BC%AF">#SOLO</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="images/jenniesolo.jpg" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--10-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>January 6 2018</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">年初1月，BLACKPINK首部擔綱演出的真人實境秀綜藝節目 <span>《Blackpink House》</span>通過影音分享網站YouTube及Naver V Live頻道首播，在日本推出的首張迷你專輯的後續改版專輯也在該月份釋出消息，這張專輯命名為《Re: Blackpink》發行於3月28日，而後順勢宣布她們將赴日本舉行出道後首場的日本競技場巡迴演唱會「BLACKPINK Arena Tour 2018」，以7月24日在日本大阪為起點，先後在福岡、千葉共3座城市舉辦8場公演，總計動員125,000名觀眾。 <a href="https://www.popdaily.com.tw/korea/4024">#Blackpink Houes</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="images/blackpinkhouse.jpg" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--11-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>June 22 2017</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">儘管BLACKPINK在2017年僅發表了一首韓語單曲，但她們仍憑藉 <span>《As If It's Your Last》</span> 取得了重大成就，除了登上《告示牌》在美國時間9月7日公開的2017年度《YouTube全球25強夏日單曲》，與世界著名歌手路易斯·方辛、紅髮艾德等2017年具影響力的歌手們並駕齊驅，成為世界各國代表人氣藝人中唯一的韓國歌手，並在YouTube於12月13日公開一年一度的排行榜中，榮登2017年《全球最受歡迎的韓國流行音樂錄影帶》冠軍，反映了BLACKPINK在全世界廣泛的流行度與影響力。這首單曲也在同年11月成為華納兄弟出品的美國超級英雄電影《正義聯盟》正式選用的插曲。 <a href="https://hk.news.yahoo.com/blackpink%E5%8F%88%E5%AF%AB%E4%B8%8B%E6%96%B0%E7%B4%80%E9%8C%84%E5%95%A6-apos-last-mv%E6%92%AD%E6%94%BE%E9%87%8F%E7%AA%81%E7%A0%B46%E5%8D%83%E8%90%AC-024900069.html">#As If It's Your Last</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="images/asifityourlast.jpeg" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">                                        <!--12-->
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/mark.jpg">
+                            <div>
+                                <p>Blackpink</p>
+                                <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                                <span>August 8 2016</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">從2012年開始逐年釋出新女團預計人選後，最終在2016年5月18日，YG娛樂透過新聞稿證實新女團將於今年夏天出道並於5月30日宣佈會在每週三依次公開正式成員的資訊。6月1日，公佈首位新女團成員：<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/lisa.html">Lisa</a>將成為即成員<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/jennie.html">Jennie</a>，韓國籍；8日，公佈第二位成員：<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/lisa.html">Lisa</a>，泰國籍；15日，公佈第三位成員：<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/jisoo.html">Jisoo</a>，韓國籍；22日，公佈最終成員：<a href="file:///C:/Users/%E9%AD%8F%E6%88%90%E9%A7%BF/OneDrive/%E6%A1%8C%E9%9D%A2/social/rose.html">rosé</a>，紐韓雙籍，共四名成員。6月29日，公佈組合名稱為 <span>《BLACKPINK》</span> 並在7月29日宣佈將於8月8日晚間8時正式出道。 <a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/28843/yg%E6%96%B0%E5%A5%B3%E5%9C%98%E5%AE%9A%E5%90%8Dblackpink%E5%87%BA%E9%81%93-%E5%B9%B3%E5%9D%8719%E6%AD%B2%E9%9D%92%E6%98%A5%E7%84%A1%E6%95%B5">#Blackpink</a>
+                        <!--<a href="#">#ToutubeChannel</a>--></p>
+                    <img src="images/2016-1.jpg" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/mark.jpg"> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="load-mare-btn">Load More</button>
+            </div>
+        
+        <!------------------------ right-sidebar -------------------->
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See All</a>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>16</h3>
+                        <span>January</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Jennie Birthday</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 南韓首爾特別市江南區</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>3</h3>
+                        <span>January</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Jisoo Birthday</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 南韓京畿道果川市</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>27</h3>
+                        <span>March</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Lisa Birthday</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 泰國武里南府</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>11</h3>
+                        <span>February</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Rosé Birthday</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 紐西蘭奧克蘭</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="sidebar-title">
+                    <h4>Advertisment</h4>
+                    <a href="#">close</a>
+                </div>
+                <img src="images/advertisement.webp" class="sidebar-ads">
+                <div class="sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide Chat</a>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/lisa1.jpg">
+                    </div>
+                    <p>Lisa</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/jisoo1.jpg">
+                    </div>
+                    <p>Jisoo</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/rose1.jpg">
+                    </div>
+                    <p>Rosé</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/111.jpg">
+                    </div>
+                    <p>jennie</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2021 - Easy Tutorials Youtude Channel</p>
+        </div>
+        <script src="social.js"></script>
+    </body>
+</html>
+    
